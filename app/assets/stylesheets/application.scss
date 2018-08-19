@@ -1,0 +1,22 @@
+
+/*
+*= require material_icons
+*/
+$main-color: #f39c12;
+$bg-color: #ecf0f1;
+
+
+@import 'bootstrap';
+@import 'home';
+@import 'yamm';
+body{
+  margin:0px;
+  padding: 0px;
+  background-color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  box-sizing: border-box;
+  h1, h2, h3 ,h4 ,h5 {
+    color: $main-color;
+  }
+}
