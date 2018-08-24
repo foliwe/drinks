@@ -1,7 +1,5 @@
 
-/*
-*= require material_icons
-*/
+
 $main-color: #f39c12;
 $bg-color: #ecf0f1;
 
@@ -12,11 +10,16 @@ $bg-color: #ecf0f1;
 body{
   margin:0px;
   padding: 0px;
-  background-color: #ffffff;
+  background-color: #ecf0f1;
   font-family: 'Montserrat', sans-serif;
   font-size: 15px;
   box-sizing: border-box;
   h1, h2, h3 ,h4 ,h5 {
     color: $main-color;
+  }
+
+  .btn-primary{
+    background-color: #3498db;
+    border: 1px solid #3498db;
   }
 }

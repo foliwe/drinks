@@ -38,8 +38,7 @@ li.nav-item{
 
 .spacer{
   text-align: center;
-  padding: 30px;
-  margin-top: 40px;
+  padding: 20px;
 }
 .dropdown-menu {
   border: 0px;
@@ -54,7 +53,7 @@ li.nav-item{
 .section{
 
 }.btn-success{
-  background-color: #27ae60;
+  background-color: #c0392b #27ae60;
 }
 //
 // .card-title{
@@ -124,13 +123,25 @@ li.nav-item{
 //    margin-bottom:1rem;
 // }
 //
+.top-title{
+  text-transform: uppercase;
+  font-weight: bold;
+  border-bottom: 1px solid #fff;
+  color:inherit;
+}
 
+.top-card{
+  background-image: linear-gradient(to right top, #e67e22, #e1741a, #dd6a11, #d85f08, #d35400);
+  color: #fff;
+}
 }
 
 @media (min-width: 992px) {
   .section{
-  padding: 60px;
+  padding: 100px;
+
 }
+
  }
 
  .card-title{
