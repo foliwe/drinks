@@ -1,0 +1,18 @@
+<div id="cookies-bar" class="navbar navbar-fixed-bottom ">
+  <div class="container-fluid">
+    <div class="row ">
+
+     <div class="col-12 justify-content-center">
+        <div class="p-4">
+          <p class="">  We are using cookies to give you the best experience on our site. By continuing to use our site, you are agreeing to our use of cookies.</p>
+        </div>
+        <div class="d-flex justify-content-center">
+          <div class="">  <%= link_to 'Accept', request.original_url, class: 'btn btn-info' %></div>
+          <div class="">  <%= link_to 'Reject', request.original_url, id: 'delete-cookies', data: { done: 'Cookies have been deleted' }, class: 'btn btn-danger' %></div>
+        </div>
+    </div>
+
+   </div>
+
+  </div>
+</div>

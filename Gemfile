@@ -60,3 +60,4 @@ gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
 gem 'popper_js', '~> 1.12.9'
 gem 'figaro', '~> 1.1', '>= 1.1.1'
 gem 'activeadmin'
+gem "active_material", github: "vigetlabs/active_material"

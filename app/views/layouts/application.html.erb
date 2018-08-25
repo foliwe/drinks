@@ -18,8 +18,10 @@
 
   <body>
 
+    <% if !cookies[:allow_cookies] %>
+    <%= render 'shared/cookies_bar' %>
+    <% end %>
   <%=render 'shared/navbar'%>
-
 <div class="fluid">
 
   <%= yield %>

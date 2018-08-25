@@ -31,9 +31,16 @@ a.nav-link{
 
 li.nav-item{
       border-right: 1px solid #fff;
-      &:hover{
-        background-color: #34495e;
-      }
+
+      a{
+
+        &:hover{
+          text-decoration: underline;
+          
+          font-weight: bold;
+        }
+
+}
 }
 
 .spacer{
@@ -130,10 +137,10 @@ li.nav-item{
   color:inherit;
 }
 
+}
 .top-card{
   background-image: linear-gradient(to right top, #e67e22, #e1741a, #dd6a11, #d85f08, #d35400);
   color: #fff;
-}
 }
 
 @media (min-width: 992px) {
