@@ -30,8 +30,8 @@ ready = ->
     allowCookies() unless cookiesAllowed == 'yes'
 
   # allow cookies by scrolling
-  $(document).scroll ->
-    allowCookies() unless cookiesAllowed == 'yes'
+  # $(document).scroll ->
+  #   allowCookies() unless cookiesAllowed == 'yes'
 
   # delete cookies
   $('#delete-cookies').on 'click', (e) ->

@@ -54,8 +54,35 @@
 
     </div>
   </div>
+</div>
 
-  <i class="material-icons">
-alternate_email
-</i>
+
+
+<div class="">
+  <%= search_form_for @search do |f| %>
+
+
+  <%= f.label :name_cont %> <br>
+  <%= f.search_field :name_cont %> <br>
+
+<hr>
+  <%= f.label :product_category_name_start %> <br>
+  <%= f.search_field :product_category_name_start %> <br>
+
+
+
+  <%= f.submit %>
+<% end %>
+
+</div>
+
+
+<div class="p-4">
+  <% @products.each do |product|%>
+
+  <%= product.name%> <br>
+
+  <%=product.product_category.name%> <br>
+
+  <%end%>
 </div>

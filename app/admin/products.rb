@@ -5,7 +5,7 @@ ActiveAdmin.register Product do
  # permit_params :list, :of, :attributes, :on, :model
 
  # or
-permit_params :name, :gram, :description, :product_category_id
+permit_params :name, :gram, :description, :product_category_id,:image
 #
 # or
 #

@@ -61,3 +61,4 @@ gem 'popper_js', '~> 1.12.9'
 gem 'figaro', '~> 1.1', '>= 1.1.1'
 gem 'activeadmin'
 gem "active_material", github: "vigetlabs/active_material"
+gem 'ransack'

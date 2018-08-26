@@ -257,6 +257,7 @@ DEPENDENCIES
   popper_js (~> 1.12.9)
   puma (~> 3.11)
   rails (~> 5.2.1)
+  ransack
   sass-rails (~> 5.0)
   spring
   spring-watcher-listen (~> 2.0.0)
