@@ -62,3 +62,6 @@ gem 'figaro', '~> 1.1', '>= 1.1.1'
 gem 'activeadmin'
 gem "active_material", github: "vigetlabs/active_material"
 gem 'ransack'
+gem 'faker', :git => 'https://github.com/stympy/faker.git', :branch => 'master'
+gem 'image_processing', '~> 1.2'
+gem 'friendly_id', '~> 5.2.0'

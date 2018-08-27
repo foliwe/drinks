@@ -1,0 +1,36 @@
+
+
+
+<div class="">
+<div class="container-fluid">
+
+  <div class="row">
+    <div class="col-sm-12 bg">
+      <%#= image_tag(url_for(@product.image),size:"500x400",class:"img-fluid") %>
+      <%=@product.description%>
+    </div>
+
+  </div>
+</div>
+
+
+    <h3 class="text-center pt-4">Available <%=@product.name%> Products</h3>
+
+
+    <div class="container-fluid ">
+
+      <div class="row sub_products">
+
+        <%@product.sub_products.each do |sub|%>
+        <div class="col-sm-3 py-2">
+          <div class="card">
+            <%= image_tag(url_for(sub.photo),class:" card-img-top img-fluid") %>
+            <div class="card-body">
+              <p class="card-text"> <%= sub.name%></p>
+            </div>
+          </div>
+        </div>
+        <%end%>
+      </div>
+  </div>
+</div>

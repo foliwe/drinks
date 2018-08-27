@@ -1,4 +1,12 @@
 GIT
+  remote: https://github.com/stympy/faker.git
+  revision: 86a9fcf5c1867fcbac9750925e0b3820570613b8
+  branch: master
+  specs:
+    faker (1.9.1)
+      i18n (>= 0.7)
+
+GIT
   remote: https://github.com/vigetlabs/active_material.git
   revision: 40f80e98196168203467f645ecca96711dc26c55
   specs:
@@ -98,6 +106,8 @@ GEM
     formtastic (3.1.5)
       actionpack (>= 3.2.13)
     formtastic_i18n (0.6.0)
+    friendly_id (5.2.1)
+      activerecord (>= 4.0.0)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
     has_scope (0.7.2)
@@ -105,6 +115,9 @@ GEM
       activesupport (>= 4.1)
     i18n (1.1.0)
       concurrent-ruby (~> 1.0)
+    image_processing (1.6.0)
+      mini_magick (~> 4.0)
+      ruby-vips (>= 2.0.11, < 3)
     inherited_resources (1.9.0)
       actionpack (>= 4.2, < 5.3)
       has_scope (~> 0.6)
@@ -142,6 +155,7 @@ GEM
       mimemagic (~> 0.3.2)
     method_source (0.9.0)
     mimemagic (0.3.2)
+    mini_magick (4.8.0)
     mini_mime (1.0.1)
     mini_portile2 (2.3.0)
     minitest (5.11.3)
@@ -193,6 +207,8 @@ GEM
     responders (2.4.0)
       actionpack (>= 4.2.0, < 5.3)
       railties (>= 4.2.0, < 5.3)
+    ruby-vips (2.0.13)
+      ffi (~> 1.9)
     ruby_dep (1.5.0)
     sass (3.5.7)
       sass-listen (~> 4.0.0)
@@ -249,7 +265,10 @@ DEPENDENCIES
   byebug
   coffee-rails (~> 4.2)
   devise (~> 4.4.3)
+  faker!
   figaro (~> 1.1, >= 1.1.1)
+  friendly_id (~> 5.2.0)
+  image_processing (~> 1.2)
   jbuilder (~> 2.5)
   jquery-rails (~> 4.3, >= 4.3.1)
   listen (>= 3.0.5, < 3.2)
