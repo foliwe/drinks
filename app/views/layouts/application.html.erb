@@ -11,7 +11,7 @@
 
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500" rel="stylesheet">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application' %>
 
 
   </head>
@@ -24,6 +24,8 @@
   <% if !cookies[:allow_cookies] %>
   <%= render 'shared/cookies_bar' %>
   <% end %>
+
+  <%=render 'shared/messages' if !flash.empty?%>
   <%= yield %>
 </div>
 

@@ -5,7 +5,8 @@
 <div class="container-fluid">
 
   <div class="row">
-    <div class="col-sm-12 bg">
+
+
       <%#= image_tag(url_for(@product.image),size:"500x400",class:"img-fluid") %>
       <%=@product.description%>
     </div>
@@ -37,12 +38,13 @@
 
             <div class="card-footer bg-white">
 
-              <%=link_to 'Get Order/Purchase info','',class:"btn btn-outline-info btn-sm btn-block"%>
-              <!-- <button type="button" class="">Check Availability</button> -->
+              <%=link_to 'Get Order/Purchase info',new_inquiry_path,class:"btn btn-outline-info btn-sm btn-block"%>
             </div>
           </div>
         </div>
         <%end%>
       </div>
   </div>
+<div id="myModal"></div>
+
 </div>
