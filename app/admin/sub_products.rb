@@ -11,12 +11,18 @@ ActiveAdmin.register SubProduct do
 #   permitted << :other if params[:action] == 'create' && current_user.admin?
 #   permitted
 # end
-permit_params :name, :photo,:product_id
+permit_params :name, :photo,:product_id, :rating
 
+controller do
+  def find_resource
+    scoped_collection.where(slug: params[:id]).first!
+  end
+end
 form do |f|
   f.inputs "Upload" do
     f.input :photo, required: true, as: :file
     f.input :name
+    f.input :rating
     f.collection_select(:product_id, Product.all, :id, :name)
   end
   f.actions

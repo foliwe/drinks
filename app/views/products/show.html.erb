@@ -26,7 +26,19 @@
           <div class="card">
             <%= image_tag(url_for(sub.photo),class:" card-img-top img-fluid") %>
             <div class="card-body">
-              <p class="card-text"> <%= sub.name%></p>
+              <p class="card-text">
+             <%= sub.name%> <br><br>
+               Rated Globaly :<% sub.rating.to_i.times do  %>
+               <i class="fas fa-star"></i>
+               <% end %>
+
+               </p>
+            </div>
+
+            <div class="card-footer bg-white">
+
+              <%=link_to 'Get Order/Purchase info','',class:"btn btn-outline-info btn-sm btn-block"%>
+              <!-- <button type="button" class="">Check Availability</button> -->
             </div>
           </div>
         </div>

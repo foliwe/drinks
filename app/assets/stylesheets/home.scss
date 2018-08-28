@@ -11,10 +11,15 @@
 .sub_products{
   padding: 100px;
 }
+
 dd{
   a{
     text-transform: uppercase;
   }
+}
+
+i.fa-star{
+  color: #f1c40f;
 }
 .bg{
   // background-image: asset_url(url_for(product.image));

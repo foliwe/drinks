@@ -5,9 +5,13 @@ ActiveAdmin.register Product do
  # permit_params :list, :of, :attributes, :on, :model
 
  # or
-permit_params :name, :gram, :description, :product_category_id,:image
+permit_params :name, :gram, :description, :product_category_id,:image,:slug
  form partial: 'form'
-
+ controller do
+   def find_resource
+     scoped_collection.where(slug: params[:id]).first!
+   end
+ end
  show do
     attributes_table do
       row :name
