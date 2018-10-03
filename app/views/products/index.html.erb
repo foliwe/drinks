@@ -43,7 +43,7 @@
 
 
         <%#=product.product_category.name%>
-          <%= image_tag(url_for(product.image),class:"card-img-top") %>
+          <%= image_tag(url_for(product.image),class:"card-img-top") if @product.present?%>
 
         <div class="card-body">
           <h5 class="card-title"><%= link_to product.name,product_path(product)%></h5>
