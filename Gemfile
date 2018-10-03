@@ -58,7 +58,6 @@ gem 'bootstrap', '~> 4.1.1'
 gem 'devise', '~> 4.4.3'
 gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
 gem 'popper_js', '~> 1.12.9'
-gem 'figaro', '~> 1.1', '>= 1.1.1'
 gem 'activeadmin'
 gem "active_material", github: "vigetlabs/active_material"
 gem 'ransack'
@@ -66,3 +65,6 @@ gem 'faker', :git => 'https://github.com/stympy/faker.git', :branch => 'master'
 gem 'image_processing', '~> 1.2'
 gem 'friendly_id', '~> 5.2.0'
 gem 'jquery-ui-rails', '~> 6.0', '>= 6.0.1'
+gem "jquery-slick-rails"
+gem "aws-sdk-s3", require: false
+gem 'dotenv-rails', groups: [:development, :test]

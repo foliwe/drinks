@@ -12,9 +12,13 @@
 //
 //= require rails-ujs
 //= require jquery
-//= require jquery-ui
-//= require popper
 //= require cookie
 //= require bootstrap
+//= require jquery-ui/widgets/datepicker
+//= require jquery.slick
 //= require activestorage
 //= require_tree .
+
+document.addEventListener("turbolinks:load", function() {
+   $(".owl-carousel").slick();
+});

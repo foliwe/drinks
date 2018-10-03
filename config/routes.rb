@@ -12,5 +12,6 @@ Rails.application.routes.draw do
   resources :inquiries
   get 'supply',to: 'home#supply'
   get 'contact',to: 'home#contact'
+  get 'about-us',to: 'home#about'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

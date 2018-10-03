@@ -1,5 +1,5 @@
 /*
- *= require jquery-ui
+ *= require jquery-ui/datepicker
  */
 
 $main-color: #f39c12;
@@ -10,6 +10,7 @@ $bg-color: #ecf0f1;
 @import 'home';
 @import 'yamm';
 @import 'cookies';
+@import 'slick';
 body{
   position: relative;
   margin:0px;
